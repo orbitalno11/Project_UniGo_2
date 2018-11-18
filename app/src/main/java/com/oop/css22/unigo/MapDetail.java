@@ -39,11 +39,11 @@ public class MapDetail extends Fragment{
         eng = (ImageButton) view.findViewById(R.id.eng_btn);
         eng.setOnClickListener(engpush);
 
-//        cb = (ImageButton) view.findViewById(R.id.cb_btn);
-//        cb.setOnClickListener(cbpush);
-//
-//        sci = (ImageButton) view.findViewById(R.id.sci_btn);
-//        sci.setOnClickListener(scipush);
+        cb = (ImageButton) view.findViewById(R.id.cb_btn);
+        cb.setOnClickListener(cbpush);
+
+        sci = (ImageButton) view.findViewById(R.id.sci_btn);
+        sci.setOnClickListener(scipush);
     }
 
     private View.OnClickListener engpush = new View.OnClickListener() {
@@ -57,25 +57,25 @@ public class MapDetail extends Fragment{
         }
     };
 
-//    private View.OnClickListener cbpush = new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            getFragmentManager()
-//                    .beginTransaction()
-//                    .replace(R.id.fragcontainer,)
-//                    .addToBackStack(null)
-//                    .commit();
-//        }
-//    };
-//
-//    private View.OnClickListener scipush = new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            getFragmentManager()
-//                    .beginTransaction()
-//                    .replace(R.id.fragcontainer,)
-//                    .addToBackStack(null)
-//                    .commit();
-//        }
-//    };
+    private View.OnClickListener cbpush = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragcontainer,CbMap.newInstrance())
+                    .addToBackStack(null)
+                    .commit();
+        }
+    };
+
+    private View.OnClickListener scipush = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragcontainer,SciMap.newInstrance())
+                    .addToBackStack(null)
+                    .commit();
+        }
+    };
 }

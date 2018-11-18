@@ -1,5 +1,6 @@
 package com.oop.css22.unigo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -80,7 +81,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_dept) {
 
         } else if (id == R.id.nav_newacis) {
-
+            Intent myIntent = new Intent(getApplicationContext(),NewACIS.class);
+            startActivity(myIntent);
         } else if (id == R.id.nav_leb2) {
 
         }
