@@ -4,20 +4,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toolbar;
 
-public class NewACIS extends AppCompatActivity {
+public class LEB2 extends AppCompatActivity {
 
     private WebView web;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_acis);
+        setContentView(R.layout.activity_leb2);
 
         web = (WebView) findViewById(R.id.web);
         web.getSettings().setJavaScriptEnabled(true);
-        web.loadUrl("https://sinfo.kmutt.ac.th/stdmobile/");
+        web.loadUrl("https://leb2.kmutt.ac.th");
         web.setWebViewClient(new WebViewClient());
     }
 }

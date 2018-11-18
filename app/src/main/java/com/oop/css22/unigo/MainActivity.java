@@ -84,7 +84,8 @@ public class MainActivity extends AppCompatActivity
             Intent myIntent = new Intent(getApplicationContext(),NewACIS.class);
             startActivity(myIntent);
         } else if (id == R.id.nav_leb2) {
-
+            Intent myIntent = new Intent(getApplicationContext(),LEB2.class);
+            startActivity(myIntent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

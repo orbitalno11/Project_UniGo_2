@@ -23,7 +23,8 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme" />
-        <activity android:name=".NewACIS"></activity>
+        <activity android:name=".NewACIS" />
+        <activity android:name=".LEB2"></activity>
     </application>
 
 </manifest>
