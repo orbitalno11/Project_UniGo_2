@@ -9,6 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 
 /**
@@ -19,6 +23,7 @@ public class Home extends Fragment {
 
     private ImageButton map;
     private ImageButton dept;
+    private TextView textView;
 
     public static Home newInstrance() {
         return new Home();
@@ -36,6 +41,9 @@ public class Home extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getActivity().setTitle("หน้าแรก");
+
+        textView = (TextView) view.findViewById(R.id.qashows);
+        textView.setText(ranKnow());
 
         map = (ImageButton) view.findViewById(R.id.map_btn);
         map.setOnClickListener(mappush);
@@ -65,4 +73,23 @@ public class Home extends Fragment {
                     .commit();
         }
     };
+
+    private String ranKnow(){
+        String txt="";
+        int ran = (int) (Math.random()*5)+1;
+        String num = String.valueOf(ran);
+        num = "qa"+num+".txt";
+
+        try {
+            InputStream inputStream = getActivity().getAssets().open(num);
+            byte[] buf = new byte[inputStream.available()];
+            inputStream.read(buf);
+            inputStream.close();
+            txt = new String(buf);
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+        return txt;
+    }
+
 }
