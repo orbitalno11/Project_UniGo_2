@@ -44,6 +44,12 @@ public class DeptDetail extends Fragment {
 
         fac = (ImageButton) view.findViewById(R.id.faculty);
         fac.setOnClickListener(faculty);
+
+        dept1 = (ImageButton) view.findViewById(R.id.dept1);
+        dept1.setOnClickListener(dept1push);
+
+        dept2 = (ImageButton) view.findViewById(R.id.dept2);
+        dept2.setOnClickListener(dept2push);
     }
 
     private View.OnClickListener president = new View.OnClickListener() {
@@ -67,4 +73,27 @@ public class DeptDetail extends Fragment {
                     .commit();
         }
     };
+
+    private View.OnClickListener dept1push = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragcontainer,Dept1_group.newInstrance())
+                    .addToBackStack(null)
+                    .commit();
+        }
+    };
+
+    private View.OnClickListener dept2push = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragcontainer,Dept2_group.newInstrance())
+                    .addToBackStack(null)
+                    .commit();
+        }
+    };
+
 }
