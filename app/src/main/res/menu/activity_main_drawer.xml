@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_tran"
+            android:title="หน้าแรก" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="แผนที่ มจธ." />
+        <item
+            android:id="@+id/nav_dept"
+            android:icon="@drawable/depart_tran"
+            android:title="หน่วยงานใน มจธ." />
+        <item
+            android:id="@+id/nav_newacis"
+            android:icon="@drawable/newacis_tran"
+            android:title="New ACIS" />
+        <item
+            android:id="@+id/nav_leb2"
+            android:title="LEB2"
+            android:icon="@drawable/leb2_tran"/>
+    </group>
+
+</menu>
