@@ -79,7 +79,11 @@ public class MainActivity extends AppCompatActivity
                     .addToBackStack(null)
                     .commit();
         } else if (id == R.id.nav_dept) {
-
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragcontainer,DeptDetail.newInstranc())
+                    .addToBackStack(null)
+                    .commit();
         } else if (id == R.id.nav_newacis) {
             Intent myIntent = new Intent(getApplicationContext(),NewACIS.class);
             startActivity(myIntent);

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dept"
+    tools:context=".DeptDetail">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/president"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_president"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="สำนักงานอธิการบดี"
+                android:textAlignment="center"
+                android:fontFamily="@font/thaisansnueue"
+                android:textSize="20dp"/>
+
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/dept1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dept1_btn"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="สำนักและสถาบัน"
+                android:fontFamily="@font/thaisansnueue"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/faculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facu_btn"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="คณะต่าง ๆ"
+                android:fontFamily="@font/thaisansnueue"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/dept2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dept2_btn"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="หน่วยงานในกำกับของ มจธ."
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:fontFamily="@font/thaisansnueue"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

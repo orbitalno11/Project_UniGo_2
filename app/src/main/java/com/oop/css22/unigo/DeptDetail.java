@@ -14,14 +14,16 @@ import android.widget.ImageButton;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Home extends Fragment {
+public class DeptDetail extends Fragment {
 
+    private ImageButton presi,fac,dept1,dept2;
 
-    private ImageButton map;
-    private ImageButton dept;
+    public DeptDetail() {
+        // Required empty public constructor
+    }
 
-    public static Home newInstrance() {
-        return new Home();
+    public static DeptDetail newInstranc(){
+        return new DeptDetail();
     }
 
 
@@ -29,38 +31,38 @@ public class Home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_dept_detail, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("หน้าแรก");
+        getActivity().setTitle("หน่วยงานใน มจธ.");
 
-        map = (ImageButton) view.findViewById(R.id.map_btn);
-        map.setOnClickListener(mappush);
+        presi = (ImageButton) view.findViewById(R.id.president);
+        presi.setOnClickListener(president);
 
-        dept = (ImageButton) view.findViewById(R.id.dept_btn);
-        dept.setOnClickListener(deptpush);
+        fac = (ImageButton) view.findViewById(R.id.faculty);
+        fac.setOnClickListener(faculty);
     }
 
-    private View.OnClickListener mappush = new View.OnClickListener() {
+    private View.OnClickListener president = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             getFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.fragcontainer,MapDetail.newIntrance())
+                    .replace(R.id.fragcontainer,President_group.newInstrance())
                     .addToBackStack(null)
                     .commit();
         }
     };
 
-    private View.OnClickListener deptpush = new View.OnClickListener() {
+    private View.OnClickListener faculty = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             getFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.fragcontainer,DeptDetail.newInstranc())
+                    .replace(R.id.fragcontainer,Faculty_group.newInstrance())
                     .addToBackStack(null)
                     .commit();
         }
