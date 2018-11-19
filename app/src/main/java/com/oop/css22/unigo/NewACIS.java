@@ -17,7 +17,7 @@ public class NewACIS extends AppCompatActivity {
 
         web = (WebView) findViewById(R.id.web);
         web.getSettings().setJavaScriptEnabled(true);
-        web.loadUrl("https://sinfo.kmutt.ac.th/stdmobile/");
+        web.loadUrl("https://sinfo.kmutt.ac.th/stdmobile");
         web.setWebViewClient(new WebViewClient());
     }
 }
