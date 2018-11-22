@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/map_btn"
-        android:background="@android:color/transparent"/>
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/dept_btn"
