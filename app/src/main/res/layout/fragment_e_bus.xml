@@ -86,7 +86,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:src="@drawable/b11"/>
+        android:src="@drawable/b1default"/>
 
     <ImageView
         android:id="@+id/orangeroad"
@@ -96,6 +96,6 @@
         android:layout_marginTop="5dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:src="@drawable/b12"/>
+        android:src="@drawable/b2default"/>
 
 </RelativeLayout>

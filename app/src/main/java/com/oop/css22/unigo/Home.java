@@ -23,7 +23,7 @@ public class Home extends Fragment {
 
     private ImageButton map;
     private ImageButton dept;
-    private TextView textView;
+    private ImageButton ebus;
 
     public static Home newInstrance() {
         return new Home();
@@ -42,15 +42,28 @@ public class Home extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         getActivity().setTitle("หน้าแรก");
 
-        textView = (TextView) view.findViewById(R.id.qashows);
-        textView.setText(ranKnow());
 
         map = (ImageButton) view.findViewById(R.id.map_btn);
         map.setOnClickListener(mappush);
 
         dept = (ImageButton) view.findViewById(R.id.dept_btn);
         dept.setOnClickListener(deptpush);
+
+        ebus = (ImageButton) view.findViewById(R.id.ebus);
+        ebus.setOnClickListener(ebuspush);
+
     }
+
+    private  View.OnClickListener ebuspush = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragcontainer,eBus.newInstrance())
+                    .addToBackStack(null)
+                    .commit();
+        }
+    };
 
     private View.OnClickListener mappush = new View.OnClickListener() {
         @Override
