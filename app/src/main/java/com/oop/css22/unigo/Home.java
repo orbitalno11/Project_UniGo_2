@@ -87,22 +87,22 @@ public class Home extends Fragment {
         }
     };
 
-    private String ranKnow(){
-        String txt="";
-        int ran = (int) (Math.random()*5)+1;
-        String num = String.valueOf(ran);
-        num = "qa"+num+".txt";
-
-        try {
-            InputStream inputStream = getActivity().getAssets().open(num);
-            byte[] buf = new byte[inputStream.available()];
-            inputStream.read(buf);
-            inputStream.close();
-            txt = new String(buf);
-        }catch (IOException ex){
-            ex.printStackTrace();
-        }
-        return txt;
-    }
+//    private String ranKnow(){
+//        String txt="";
+//        int ran = (int) (Math.random()*5)+1;
+//        String num = String.valueOf(ran);
+//        num = "qa"+num+".txt";
+//
+//        try {
+//            InputStream inputStream = getActivity().getAssets().open(num);
+//            byte[] buf = new byte[inputStream.available()];
+//            inputStream.read(buf);
+//            inputStream.close();
+//            txt = new String(buf);
+//        }catch (IOException ex){
+//            ex.printStackTrace();
+//        }
+//        return txt;
+//    }
 
 }

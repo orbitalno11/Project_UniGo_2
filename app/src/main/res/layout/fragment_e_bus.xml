@@ -7,95 +7,202 @@
     tools:context=".eBus">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:id="@+id/busmap"
-        android:layout_width="match_parent"
-        android:layout_marginTop="25dp"
-        android:layout_height="200dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:src="@drawable/bus_map"/>
-
     <LinearLayout
-        android:layout_below="@id/busmap"
-        android:id="@+id/frame"
+        android:id="@+id/busstop"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="15dp"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="จุดจอดรถบริการ (e-Bus)"
+            android:fontFamily="@font/thaisansnueue"
+            android:textSize="23dp"
+            android:textAlignment="center"/>
+
         <LinearLayout
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/busstop1"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="จุดเริ่มต้น :"
+                android:text="สำนักงานอธิการบดี (The HUB)"
                 android:fontFamily="@font/thaisansnueue"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textColor="@android:color/black"/>
-
-            <Spinner
-                android:layout_weight="1"
-                android:id="@+id/start_list"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"></Spinner>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/busstop2"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="จุดหมาย :"
+                android:text="โรงเรียนดรุณสิกขาลัย"
                 android:fontFamily="@font/thaisansnueue"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textColor="@android:color/black"/>
 
-            <Spinner
-                android:layout_weight="1"
-                android:id="@+id/goal_list"
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/busstop3"/>
+
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"></Spinner>
+                android:layout_height="wrap_content"
+                android:text="บ้านธรรมรักษา 1 (หอหญิง)"
+                android:fontFamily="@font/thaisansnueue"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/busstop4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="อาคารเรียนรวม 3 (CB3)"
+                android:fontFamily="@font/thaisansnueue"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/busstop5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="อาคารเอนกประสงค์"
+                android:fontFamily="@font/thaisansnueue"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/busstop6"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="สำนักหอสมุด"
+                android:fontFamily="@font/thaisansnueue"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/busstop7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="อาคารปฏิบัติการทางวิทยาศาสตร์ (SCL)"
+                android:fontFamily="@font/thaisansnueue"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/busstop8"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FIBO"
+                android:fontFamily="@font/thaisansnueue"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <ImageButton
-        android:layout_below="@id/frame"
-        android:id="@+id/search"
+    <Button
+        android:id="@+id/gobtn"
+        android:layout_below="@id/busstop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/search"
-        android:background="@android:color/transparent"
-        android:layout_centerHorizontal="true"/>
-
-    <ImageView
-        android:id="@+id/yellowroad"
-        android:layout_below="@id/search"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:src="@drawable/b1default"/>
-
-    <ImageView
-        android:id="@+id/orangeroad"
-        android:layout_below="@id/yellowroad"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:src="@drawable/b2default"/>
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="เริ่มค้นหาเส้นทางเดินรถ"
+        android:fontFamily="@font/thaisansnueue"
+        android:textSize="20dp"/>
 
 </RelativeLayout>
