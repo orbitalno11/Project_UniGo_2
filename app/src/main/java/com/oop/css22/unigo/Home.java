@@ -97,7 +97,7 @@ public class Home extends Fragment {
         public void onClick(View v) {
             getFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.fragcontainer,DeptDetail.newInstranc())
+                    .replace(R.id.fragcontainer,Facili.newInstrance())
                     .addToBackStack(null)
                     .commit();
         }

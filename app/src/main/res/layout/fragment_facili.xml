@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@drawable/mapbg"
+tools:context=".Facili">
+
+<!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/atm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/shop"
+        android:layout_alignTop="@+id/food"
+        android:background="@android:color/transparent"
+        android:src="@drawable/atm" />
+
+    <ImageButton
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="31dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/food" />
+
+    <ImageButton
+        android:id="@+id/shop"
+        android:layout_width="139dp"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="141dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/shop" />
+
+    <ImageButton
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="141dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/post" />
+
+</RelativeLayout>
