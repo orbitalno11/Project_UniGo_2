@@ -24,6 +24,7 @@ public class Home extends Fragment {
     private ImageButton map;
     private ImageButton dept;
     private ImageButton ebus;
+    private ImageButton service;
 
     public static Home newInstrance() {
         return new Home();
@@ -52,6 +53,10 @@ public class Home extends Fragment {
         ebus = (ImageButton) view.findViewById(R.id.ebus);
         ebus.setOnClickListener(ebuspush);
 
+        service = (ImageButton) view.findViewById(R.id.sevice);
+        service.setOnClickListener(servicepush);
+
+
     }
 
     private  View.OnClickListener ebuspush = new View.OnClickListener() {
@@ -77,6 +82,17 @@ public class Home extends Fragment {
     };
 
     private View.OnClickListener deptpush = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragcontainer,DeptDetail.newInstranc())
+                    .addToBackStack(null)
+                    .commit();
+        }
+    };
+
+    private View.OnClickListener servicepush = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             getFragmentManager()

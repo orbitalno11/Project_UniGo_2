@@ -29,8 +29,16 @@
         android:layout_below="@id/dept_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/dept_btn"
+        android:src="@drawable/ebus_btn"
         android:background="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/sevice"
+        android:layout_below="@id/ebus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/service_btn"
+        android:background="@android:color/transparent"/>
 
 
 </RelativeLayout>
