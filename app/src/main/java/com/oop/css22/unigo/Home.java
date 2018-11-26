@@ -1,6 +1,7 @@
 package com.oop.css22.unigo;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -25,6 +26,8 @@ public class Home extends Fragment {
     private ImageButton dept;
     private ImageButton ebus;
     private ImageButton service;
+    private ImageButton newacis;
+    private ImageButton leb2;
 
     public static Home newInstrance() {
         return new Home();
@@ -55,6 +58,24 @@ public class Home extends Fragment {
 
         service = (ImageButton) view.findViewById(R.id.sevice);
         service.setOnClickListener(servicepush);
+
+        newacis = (ImageButton) view.findViewById(R.id.newacis);
+        newacis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(getActivity(),NewACIS.class);
+                startActivityForResult(myIntent,0);
+            }
+        });
+
+        leb2 = (ImageButton) view.findViewById(R.id.leb2);
+        leb2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(getActivity(),LEB2.class);
+                startActivityForResult(myIntent,0);
+            }
+        });
 
 
     }
@@ -103,22 +124,5 @@ public class Home extends Fragment {
         }
     };
 
-//    private String ranKnow(){
-//        String txt="";
-//        int ran = (int) (Math.random()*5)+1;
-//        String num = String.valueOf(ran);
-//        num = "qa"+num+".txt";
-//
-//        try {
-//            InputStream inputStream = getActivity().getAssets().open(num);
-//            byte[] buf = new byte[inputStream.available()];
-//            inputStream.read(buf);
-//            inputStream.close();
-//            txt = new String(buf);
-//        }catch (IOException ex){
-//            ex.printStackTrace();
-//        }
-//        return txt;
-//    }
 
 }
