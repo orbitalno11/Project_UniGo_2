@@ -47,7 +47,7 @@ public class Atm extends Fragment implements droplist{
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Atm");
+        getActivity().setTitle("ATM");
 
         createList();
         textView =(TextView) view.findViewById(R.id.atm_shows);

@@ -46,7 +46,7 @@ public class Food extends Fragment implements droplist {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Food");
+        getActivity().setTitle("ร้านอาหารและเครื่องดืม");
 
         createList();
         textView = (TextView) view.findViewById(R.id.food_shows);

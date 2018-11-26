@@ -45,7 +45,7 @@ public class Shop extends Fragment implements droplist{
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Shop");
+        getActivity().setTitle("ร้านค้า");
 
         createList();
         textView =(TextView) view.findViewById(R.id.shop_shows);
