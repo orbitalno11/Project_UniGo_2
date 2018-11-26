@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mapbg"
+    android:background="@drawable/atmbg"
     tools:context=".Atm">
 
     <!-- TODO: Update blank fragment layout -->
@@ -15,8 +15,8 @@
         android:layout_height="58dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="132dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="230dp" />
 
     <ImageButton
         android:id="@+id/search"
@@ -24,19 +24,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="137dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="15dp"
         android:background="@android:color/transparent"
         android:src="@drawable/search" />
 
     <TextView
         android:id="@+id/atm_shows"
-        android:layout_width="350dp"
-        android:layout_height="280dp"
+        android:layout_width="317dp"
+        android:layout_height="239dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginBottom="81dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="3dp"
         android:fontFamily="@font/thaisansnueue"
         android:textSize="20dp" />
 

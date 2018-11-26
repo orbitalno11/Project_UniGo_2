@@ -68,7 +68,7 @@ public class Food extends Fragment implements droplist {
     @Override
     public String selectedItem(String item) {
         switch (item) {
-            case "อาตารเรียนรวม 4":
+            case "อาคารเรียนรวม 4":
                 return readFile("f (1).txt");
             case "ตึกจอดรถ 14 ชั้น":
                 return readFile("f (2).txt");
@@ -80,7 +80,7 @@ public class Food extends Fragment implements droplist {
                 return readFile("f (5).txt");
             case "อาคารเรียนรวม 1":
                 return readFile("f (6).txt");
-            case "บ้านธรรมษา 1":
+            case "บ้านธรรมรักษา 1":
                 return readFile("f (7).txt");
             case "บ้านธรรมรักษา 2":
                 return readFile("f (8).txt");
